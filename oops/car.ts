@@ -1,20 +1,24 @@
 export class Car {
-    private wheels : number = 10;
+    private wheels: number = 10;
 
-    public constructor(wheels : number) {
+    public constructor(wheels: number) {
         this.wheels = wheels;
     }
-    private increaseSpeed() : void {
+    private increaseSpeed(): void {
         this.wheels++;
-                console.log('Increasing Speed - '+this.wheels);
+        console.log('Increasing Speed - ' + this.wheels);
     }
 
-    public applyBreaks() : void {
+    public applyBreaks(): void {
         this.wheels--;
-        console.log('Applying Breaks - '+this.wheels);
+        console.log('Applying Breaks - ' + this.wheels);
     }
 
-    whatsThis(){
-                console.log('Whats this');
+    whatsThis() {
+        console.log('Whats this');
     }
- }
+}
+
+export class My {
+    
+}
