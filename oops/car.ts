@@ -20,5 +20,5 @@ export class Car {
 }
 
 export class My {
-    
+   public m : number = 100;
 }

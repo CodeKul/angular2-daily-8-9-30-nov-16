@@ -1,6 +1,7 @@
 "use strict";
 var Car = (function () {
     function Car(wheels) {
+        this.wheels = 10;
         this.wheels = wheels;
     }
     Car.prototype.increaseSpeed = function () {
@@ -17,3 +18,10 @@ var Car = (function () {
     return Car;
 }());
 exports.Car = Car;
+var My = (function () {
+    function My() {
+        this.m = 100;
+    }
+    return My;
+}());
+exports.My = My;
