@@ -1,6 +1,9 @@
+import { Animal } from './abstractclasses/animal';
+import { Tiger } from './abstractclasses/tiger';
 import { Mobile } from './inheritance/mobile';
 import { Device } from './inheritance/device';
 import { Car, My } from './oops/car';
+
 export class Starter {
 
     public intro(): void {
@@ -22,5 +25,21 @@ export class Starter {
         console.log('mani is '+device.getMani);
 
         let mobile: Mobile = new Mobile();
+    }
+
+    public abstractClasses() : void {
+
+       // let animal : Animal = new Animal();
+        // animal.walk();
+
+        let abc : Animal = new Tiger();
+        abc.walk();
+        abc.age();
+       // animalTiger.runFast();
+
+       let tiger : Tiger = new Tiger();
+       tiger.runFast();
+       tiger.walk();
+       tiger.age();
     }
 }
