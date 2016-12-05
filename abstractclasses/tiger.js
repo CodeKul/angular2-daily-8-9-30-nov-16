@@ -16,6 +16,9 @@ var Tiger = (function (_super) {
     Tiger.prototype.runFast = function () {
         console.log('Tiger is running fast');
     };
+    Tiger.prototype.age = function () {
+        return _super.prototype.age.call(this) + 50;
+    };
     return Tiger;
 }(animal_1.Animal));
 exports.Tiger = Tiger;

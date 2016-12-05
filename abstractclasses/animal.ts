@@ -1,7 +1,7 @@
 export abstract class Animal {
     public abstract walk() : void ;
 
-    public age() : Number {
+    public age() : number {
         return 1;
     }
 }

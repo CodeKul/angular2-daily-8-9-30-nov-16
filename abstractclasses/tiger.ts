@@ -9,4 +9,8 @@ export /*abstract*/ class Tiger extends Animal{
     public runFast() : void {
         console.log('Tiger is running fast');
     }
+
+    public age() : number {
+        return super.age() + 50;
+    }
 }
