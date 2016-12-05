@@ -1,3 +1,6 @@
+import { Generics } from './generics/generics';
+import { Bike } from './interfaces/bike';
+import { Human } from './interfaces/human';
 import { Animal } from './abstractclasses/animal';
 import { Tiger } from './abstractclasses/tiger';
 import { Mobile } from './inheritance/mobile';
@@ -41,5 +44,28 @@ export class Starter {
        tiger.runFast();
        tiger.walk();
        tiger.age();
+    }
+
+    public interfaces() : void {
+
+        let human : Human = new Human();
+        human.eat();
+        human.locate();
+
+        let bike : Bike = new Bike();
+        bike.accelerate();
+        bike.locate();
+    }
+
+    public generics() : void {
+
+        //STL =Standarad Templating Lib
+        let anyString : Generics<String> = new Generics<String>(); 
+        anyString.assignType('Android');
+        console.log('String type - '+anyString.getAnyType());
+
+        let anyInt : Generics<Number> = new Generics<Number>();
+        anyInt.assignType();
+        console.log('Number type - '+anyInt.getAnyType());
     }
 }

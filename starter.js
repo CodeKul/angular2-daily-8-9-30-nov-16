@@ -1,4 +1,7 @@
 "use strict";
+var generics_1 = require('./generics/generics');
+var bike_1 = require('./interfaces/bike');
+var human_1 = require('./interfaces/human');
 var tiger_1 = require('./abstractclasses/tiger');
 var mobile_1 = require('./inheritance/mobile');
 var device_1 = require('./inheritance/device');
@@ -30,6 +33,23 @@ var Starter = (function () {
         tiger.runFast();
         tiger.walk();
         tiger.age();
+    };
+    Starter.prototype.interfaces = function () {
+        var human = new human_1.Human();
+        human.eat();
+        human.locate();
+        var bike = new bike_1.Bike();
+        bike.accelerate();
+        bike.locate();
+    };
+    Starter.prototype.generics = function () {
+        //STL =Standarad Templating Lib
+        var anyString = new generics_1.Generics();
+        anyString.assignType('Android');
+        console.log('String type - ' + anyString.getAnyType());
+        var anyInt = new generics_1.Generics();
+        anyInt.assignType();
+        console.log('Number type - ' + anyInt.getAnyType());
     };
     return Starter;
 }());

@@ -1,3 +1,4 @@
+import { Cosmic } from './cosmic';
 import { Device } from './device';
 export class Mobile /* is a device*/ extends Device {
 
